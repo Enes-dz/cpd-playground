@@ -17,3 +17,11 @@ students.forEach((student) => {
 const names = students.map((student) => student.name);
 
 console.log(names);
+
+
+
+const yearThreeNames = students
+  .filter((student) => student.year === 3)
+  .map((student) => student.name);
+
+console.log(yearThreeNames);
