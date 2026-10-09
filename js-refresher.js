@@ -56,3 +56,13 @@ const updatedEmir = updatedStudents.find((student) => student.name === "Emir");
 
 console.log(`Original: Emir is in year ${originalEmir.year}`);
 console.log(`Updated: Emir is in year ${updatedEmir.year}`);
+
+
+
+
+
+
+students.forEach((student) => {
+  const github = student.contact?.github ?? "no GitHub";
+  console.log(`${student.name}: ${github}`);
+});
